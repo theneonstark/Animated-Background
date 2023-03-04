@@ -1,0 +1,22 @@
+.animated-background {
+	background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+	background-size: 400%, 400%;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0%;
+	left: 0%;
+	animation: animate_background 10s infinite ease-in-out;
+}
+
+@keyframes animate_background {
+	0%{
+		background-position: 0 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0 50%;
+	}
+}
